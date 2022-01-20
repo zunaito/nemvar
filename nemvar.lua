@@ -1,16 +1,15 @@
-tapedeck_noscreen = true
+tpdk_noscreen = true
 
 include 'tapedeck/tapedeck' 
 include 'nemes/nemes'
-nem = { init = init }
+nemes = { init = init }
 
 function init()
     tapedeck.init()
 
     params:set('demo start/stop', 0)
 
-    nem.init()
-    tapedeck_:init()
+    nemes.init()
 end
 
 function cleanup() 
